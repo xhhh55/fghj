@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premium Auto Detailing | Luxury Car Wash</title>
+  <title>Premium Autopflege | Luxus Autowäsche</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
@@ -20,11 +19,7 @@
       --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     
-    * { 
-      box-sizing: border-box; 
-      margin: 0; 
-      padding: 0; 
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     
     body {
       font-family: 'Open Sans', sans-serif;
@@ -50,11 +45,7 @@
       transition: var(--transition);
       box-shadow: 0 5px 20px rgba(0,0,0,0.3);
     }
-    
-    .navbar.scrolled {
-      padding: 10px 5%;
-    }
-    
+    .navbar.scrolled { padding: 10px 5%; }
     .logo {
       font-family: 'Playfair Display', serif;
       font-size: 28px;
@@ -63,16 +54,8 @@
       text-decoration: none;
       letter-spacing: 1px;
     }
-    
-    .nav-links {
-      display: flex;
-      list-style: none;
-    }
-    
-    .nav-links li {
-      margin: 0 15px;
-    }
-    
+    .nav-links { display: flex; list-style: none; }
+    .nav-links li { margin: 0 15px; }
     .nav-links a {
       color: var(--text-soft);
       text-decoration: none;
@@ -82,741 +65,214 @@
       padding: 5px 10px;
       position: relative;
     }
-    
-    .nav-links a:hover {
-      color: var(--highlight);
-    }
-    
+    .nav-links a:hover { color: var(--highlight); }
     .nav-links a::after {
       content: '';
       position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 2px;
+      bottom: 0; left: 0;
+      width: 0; height: 2px;
       background: var(--highlight);
       transition: var(--transition);
     }
-    
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-    
-    .hamburger {
-      display: none;
-      cursor: pointer;
-      background: transparent;
-      border: none;
-      color: var(--highlight);
-      font-size: 24px;
-    }
+    .nav-links a:hover::after { width: 100%; }
+    .hamburger { display: none; cursor: pointer; background: transparent; border: none; color: var(--highlight); font-size: 24px; }
     
     /* Hero Section */
     .hero {
-      position: relative;
-      height: 100vh;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      position: relative; height: 100vh; overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
     }
-    
     .hero video {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      top: 0;
-      left: 0;
-      z-index: -1;
+      position: absolute; width: 100%; height: 100%;
+      object-fit: cover; top: 0; left: 0; z-index: -1;
     }
-    
     .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(45deg, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.5) 100%);
-      z-index: 0;
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(45deg, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.5) 100%); z-index: 0;
     }
-    
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      max-width: 900px;
-      padding: 0 20px;
-    }
-    
+    .hero-content { position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 0 20px; }
     .hero-content h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 4.5rem;
-      margin-bottom: 20px;
-      color: var(--highlight);
-      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-      letter-spacing: 1px;
-      line-height: 1.1;
+      font-family: 'Playfair Display', serif; font-size: 4.5rem; margin-bottom: 20px;
+      color: var(--highlight); text-shadow: 0 2px 10px rgba(0,0,0,0.3); letter-spacing: 1px; line-height: 1.1;
     }
-    
     .hero-content p {
-      font-size: 1.5rem;
-      color: var(--gold-light);
-margin-bottom: 30px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+      font-size: 1.5rem; color: var(--gold-light); margin-bottom: 30px;
+      max-width: 700px; margin-left: auto; margin-right: auto;
     }
-    
     .btn {
-      display: inline-block;
-      background-color: var(--highlight);
-      color: #1a1a1a;
-      padding: 15px 40px;
-      font-weight: 600;
-      border-radius: 30px;
-      border: none;
-      cursor: pointer;
-      transition: var(--transition);
-      font-size: 16px;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      box-shadow: 0 5px 15px rgba(224, 172, 63, 0.3);
+      display: inline-block; background-color: var(--highlight); color: #1a1a1a;
+      padding: 15px 40px; font-weight: 600; border-radius: 30px; border: none; cursor: pointer;
+      transition: var(--transition); font-size: 16px; text-decoration: none; text-transform: uppercase;
+      letter-spacing: 1.5px; box-shadow: 0 5px 15px rgba(224, 172, 63, 0.3);
     }
+    .btn:hover { background-color: var(--highlight-dark); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(224, 172, 63, 0.4); }
+    .btn-outline { background: transparent; border: 2px solid var(--highlight); color: var(--highlight); margin-left: 15px; }
+    .btn-outline:hover { background: rgba(224, 172, 63, 0.1); }
     
-    .btn:hover {
-      background-color: var(--highlight-dark);
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(224, 172, 63, 0.4);
-    }
+    /* Sections */
+    .section { padding: 100px 20px; position: relative; overflow: hidden; }
+    .section-title { text-align: center; margin-bottom: 70px; position: relative; }
+    .section-title h2 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--highlight); margin-bottom: 15px; }
+    .section-title .divider { width: 80px; height: 3px; background: var(--highlight); margin: 0 auto; }
+    .section-title p { color: var(--text-soft); max-width: 700px; margin: 20px auto 0; font-size: 1.1rem; }
     
-    .btn-outline {
-      background: transparent;
-      border: 2px solid var(--highlight);
-      color: var(--highlight);
-      margin-left: 15px;
-    }
-    
-    .btn-outline:hover {
-      background: rgba(224, 172, 63, 0.1);
-    }
-    
-    /* Section Styling */
-    .section {
-      padding: 100px 20px;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .section-title {
-      text-align: center;
-      margin-bottom: 70px;
-      position: relative;
-    }
-    
-    .section-title h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      color: var(--highlight);
-      margin-bottom: 15px;
-    }
-    
-    .section-title .divider {
-      width: 80px;
-      height: 3px;
-      background: var(--highlight);
-      margin: 0 auto;
-    }
-    
-    .section-title p {
-      color: var(--text-soft);
-      max-width: 700px;
-      margin: 20px auto 0;
-      font-size: 1.1rem;
-    }
-    
-    /* About Section */
-    .about-content {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 50px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .about-text {
-      flex: 1;
-      min-width: 300px;
-    }
-    
-    .about-text h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      color: var(--highlight);
-      margin-bottom: 25px;
-    }
-    
-    .about-text p {
-      color: var(--text-soft);
-      margin-bottom: 20px;
-      font-size: 1.05rem;
-    }
-    
-    .about-image {
-      flex: 1;
-      min-width: 300px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
-      position: relative;
-      transition: var(--transition);
-    }
-    
-    .about-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: var(--transition);
-    }
-    
-    .about-image:hover img {
-      transform: scale(1.05);
-    }
-    
+    /* About */
+    .about-content { display: flex; flex-wrap: wrap; align-items: center; gap: 50px; max-width: 1200px; margin: 0 auto; }
+    .about-text { flex: 1; min-width: 300px; }
+    .about-text h3 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--highlight); margin-bottom: 25px; }
+    .about-text p { color: var(--text-soft); margin-bottom: 20px; font-size: 1.05rem; }
+    .about-image { flex: 1; min-width: 300px; border-radius: 15px; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.4); position: relative; transition: var(--transition); }
+    .about-image img { width: 100%; height: auto; display: block; transition: var(--transition); }
+    .about-image:hover img { transform: scale(1.05); }
     .about-image::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(45deg, rgba(10,10,10,0.2) 0%, rgba(10,10,10,0.7) 100%);
-      z-index: 1;
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      background: linear-gradient(45deg, rgba(10,10,10,0.2) 0%, rgba(10,10,10,0.7) 100%); z-index: 1;
     }
     
-    /* Services Section */
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
+    /* Services */
+    .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1200px; margin: 0 auto; }
     .service-box {
-      background: var(--card-bg);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(224, 172, 63, 0.3);
-      padding: 40px 30px;
-      border-radius: 15px;
-      width: 350px;
-      transition: var(--transition);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
+      background: var(--card-bg); backdrop-filter: blur(10px);
+      border: 1px solid rgba(224, 172, 63, 0.3); padding: 40px 30px; border-radius: 15px;
+      width: 350px; transition: var(--transition); text-align: center; position: relative; overflow: hidden; z-index: 1;
     }
-    
     .service-box::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 5px;
-      background: var(--highlight);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: var(--transition);
-      z-index: -1;
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px;
+      background: var(--highlight); transform: scaleX(0); transform-origin: left; transition: var(--transition); z-index: -1;
     }
+    .service-box:hover::before { transform: scaleX(1); }
+    .service-icon { font-size: 3.5rem; color: var(--highlight); margin-bottom: 25px; transition: var(--transition); }
+    .service-box:hover .service-icon { transform: translateY(-10px); }
+    .service-box h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--text-light); }
+    .service-box p { color: var(--text-soft); font-size: 1rem; margin-bottom: 20px; }
+    .service-price { color: var(--highlight); font-weight: 600; font-size: 1.3rem; }
     
-    .service-box:hover::before {
-      transform: scaleX(1);
-    }
-    
-    .service-icon {
-font-size: 3.5rem;
-      color: var(--highlight);
-      margin-bottom: 25px;
-      transition: var(--transition);
-    }
-    
-    .service-box:hover .service-icon {
-      transform: translateY(-10px);
-    }
-    
-    .service-box h3 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      color: var(--text-light);
-    }
-    
-    .service-box p {
-      color: var(--text-soft);
-      font-size: 1rem;
-      margin-bottom: 20px;
-    }
-    
-    .service-price {
-      color: var(--highlight);
-      font-weight: 600;
-      font-size: 1.3rem;
-    }
-    
-    /* Gallery Section */
-    .gallery-container {
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-    
+    /* Gallery */
+    .gallery-container { max-width: 1400px; margin: 0 auto; }
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 25px;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px;
     }
-    
     .gallery-item {
-      border-radius: 12px;
-      overflow: hidden;
-      position: relative;
-      height: 280px;
-      cursor: pointer;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-      transition: var(--transition);
+      border-radius: 12px; overflow: hidden; position: relative; height: 280px; cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: var(--transition);
     }
-    
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: var(--transition);
-    }
-    
-    .gallery-item:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-    }
-    
-    .gallery-item:hover img {
-      transform: scale(1.1);
-    }
-    
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+    .gallery-item:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.3); }
+    .gallery-item:hover img { transform: scale(1.1); }
     .gallery-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px;
-      background: linear-gradient(transparent, rgba(0,0,0,0.8));
-      opacity: 0;
-      transition: var(--transition);
+      position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8)); opacity: 0; transition: var(--transition);
     }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay h4 { color: var(--text-light); margin-bottom: 5px; }
+    .gallery-overlay p { color: var(--text-soft); font-size: 0.9rem; }
     
-    .gallery-item:hover .gallery-overlay {
-      opacity: 1;
-    }
-    
-    .gallery-overlay h4 {
-      color: var(--text-light);
-      margin-bottom: 5px;
-    }
-    
-    .gallery-overlay p {
-      color: var(--text-soft);
-      font-size: 0.9rem;
-    }
-    
-    /* Clients Section */
-    .clients-logos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 50px;
-      margin-top: 50px;
-    }
-    
-    .clients-logos img {
-      max-height: 70px;
-      opacity: 0.7;
-      filter: grayscale(100%);
-      transition: var(--transition);
-    }
-    
-    .clients-logos img:hover {
-      transform: scale(1.1);
-      opacity: 1;
-      filter: none;
-    }
+    /* Clients */
+    .clients-logos { display: flex; flex-wrap: wrap; justify-content: center; gap: 50px; margin-top: 50px; }
+    .clients-logos img { max-height: 70px; opacity: 0.7; filter: grayscale(100%); transition: var(--transition); }
+    .clients-logos img:hover { transform: scale(1.1); opacity: 1; filter: none; }
     
     /* Testimonials */
     .testimonials {
       background: linear-gradient(45deg, rgba(25,25,25,0.8), rgba(15,15,15,0.9)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3') no-repeat center/cover;
-      padding: 100px 20px;
-      text-align: center;
+      padding: 100px 20px; text-align: center;
     }
-    
-    .testimonial-container {
-      max-width: 1000px;
-      margin: 0 auto;
-      position: relative;
-    }
-    
+    .testimonial-container { max-width: 1000px; margin: 0 auto; position: relative; }
     .testimonial-box {
-      background: var(--card-bg);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(224, 172, 63, 0.3);
-      padding: 40px;
-      border-radius: 15px;
-      max-width: 800px;
-      margin: 0 auto;
-      position: relative;
+      background: var(--card-bg); backdrop-filter: blur(10px);
+      border: 1px solid rgba(224, 172, 63, 0.3); padding: 40px; border-radius: 15px;
+      max-width: 800px; margin: 0 auto; position: relative;
     }
-    
     .testimonial-box::before {
-      content: '"';
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-family: 'Playfair Display', serif;
-      font-size: 5rem;
-      color: rgba(224, 172, 63, 0.2);
+      content: '"'; position: absolute; top: 20px; left: 20px;
+      font-family: 'Playfair Display', serif; font-size: 5rem; color: rgba(224, 172, 63, 0.2);
     }
+    .testimonial-text { font-size: 1.1rem; color: var(--text-soft); font-style: italic; margin-bottom: 25px; line-height: 1.8; }
+    .client-info { display: flex; align-items: center; justify-content: center; }
+    .client-avatar { width: 60px; height: 60px; border-radius: 50%; overflow: hidden; margin-right: 15px; border: 2px solid var(--highlight); }
+    .client-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .client-details h4 { font-size: 1.2rem; margin-bottom: 5px; }
+    .client-details p { color: var(--highlight); font-size: 0.9rem; }
     
-    .testimonial-text {
-      font-size: 1.1rem;
-      color: var(--text-soft);
-      font-style: italic;
-      margin-bottom: 25px;
-      line-height: 1.8;
-    }
-    
-    .client-info {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .client-avatar {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-right: 15px;
-      border: 2px solid var(--highlight);
-    }
-    
-    .client-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    
-    .client-details h4 {
-font-size: 1.2rem;
-      margin-bottom: 5px;
-    }
-    
-    .client-details p {
-      color: var(--highlight);
-      font-size: 0.9rem;
-    }
-    
-    /* Contact Section */
-    .contact-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 50px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .contact-info {
-      flex: 1;
-      min-width: 300px;
-    }
-    
-    .contact-info h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      color: var(--highlight);
-      margin-bottom: 30px;
-    }
-    
-    .contact-item {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 30px;
-    }
-    
-    .contact-icon {
-      font-size: 1.5rem;
-      color: var(--highlight);
-      margin-right: 15px;
-      min-width: 30px;
-    }
-    
-    .contact-text h4 {
-      font-size: 1.2rem;
-      margin-bottom: 5px;
-    }
-    
-    .contact-text a {
-      color: var(--text-soft);
-      text-decoration: none;
-      transition: var(--transition);
-      display: block;
-      margin-bottom: 3px;
-    }
-    
-    .contact-text a:hover {
-      color: var(--highlight);
-    }
-    
-    .contact-form {
-      flex: 1;
-      min-width: 300px;
-    }
-    
-    .form-group {
-      margin-bottom: 25px;
-    }
-    
-    .form-group label {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--text-soft);
-    }
-    
+    /* Contact */
+    .contact-container { display: flex; flex-wrap: wrap; gap: 50px; max-width: 1200px; margin: 0 auto; }
+    .contact-info { flex: 1; min-width: 300px; }
+    .contact-info h3 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--highlight); margin-bottom: 30px; }
+    .contact-item { display: flex; align-items: flex-start; margin-bottom: 30px; }
+    .contact-icon { font-size: 1.5rem; color: var(--highlight); margin-right: 15px; min-width: 30px; }
+    .contact-text h4 { font-size: 1.2rem; margin-bottom: 5px; }
+    .contact-text a { color: var(--text-soft); text-decoration: none; transition: var(--transition); display: block; margin-bottom: 3px; }
+    .contact-text a:hover { color: var(--highlight); }
+    .contact-form { flex: 1; min-width: 300px; }
+    .form-group { margin-bottom: 25px; }
+    .form-group label { display: block; margin-bottom: 8px; color: var(--text-soft); }
     .form-control {
-      width: 100%;
-      padding: 15px;
-      background: rgba(25,25,25,0.7);
-      border: 1px solid rgba(224, 172, 63, 0.3);
-      border-radius: 8px;
-      color: var(--text-light);
-      font-size: 1rem;
-      transition: var(--transition);
+      width: 100%; padding: 15px; background: rgba(25,25,25,0.7);
+      border: 1px solid rgba(224, 172, 63, 0.3); border-radius: 8px; color: var(--text-light);
+      font-size: 1rem; transition: var(--transition);
     }
-    
-    .form-control:focus {
-      outline: none;
-      border-color: var(--highlight);
-      box-shadow: 0 0 0 2px rgba(224, 172, 63, 0.2);
-    }
-    
-    textarea.form-control {
-      min-height: 150px;
-      resize: vertical;
-    }
+    .form-control:focus { outline: none; border-color: var(--highlight); box-shadow: 0 0 0 2px rgba(224, 172, 63, 0.2); }
+    textarea.form-control { min-height: 150px; resize: vertical; }
     
     /* Footer */
-    footer {
-      background-color: #050505;
-      color: #999;
-      text-align: center;
-      padding: 50px 20px 30px;
-    }
-    
+    footer { background-color: #050505; color: #999; text-align: center; padding: 50px 20px 30px; }
     .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 40px;
-      margin-bottom: 40px;
+      max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap;
+      justify-content: space-between; gap: 40px; margin-bottom: 40px;
     }
-    
-    .footer-col {
-      flex: 1;
-      min-width: 250px;
-    }
-    
-    .footer-col h4 {
-      color: var(--highlight);
-      font-size: 1.3rem;
-      margin-bottom: 25px;
-      font-family: 'Playfair Display', serif;
-    }
-    
-    .footer-col ul {
-      list-style: none;
-    }
-    
-    .footer-col ul li {
-      margin-bottom: 12px;
-    }
-    
-    .footer-col ul li a {
-      color: var(--text-soft);
-      text-decoration: none;
-      transition: var(--transition);
-    }
-    
-    .footer-col ul li a:hover {
-      color: var(--highlight);
-    }
-    
-    .social-links {
-      display: flex;
-      gap: 15px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    
+    .footer-col { flex: 1; min-width: 250px; }
+    .footer-col h4 { color: var(--highlight); font-size: 1.3rem; margin-bottom: 25px; font-family: 'Playfair Display', serif; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 12px; }
+    .footer-col ul li a { color: var(--text-soft); text-decoration: none; transition: var(--transition); }
+    .footer-col ul li a:hover { color: var(--highlight); }
+    .social-links { display: flex; gap: 15px; justify-content: center; margin-top: 20px; }
     .social-icon {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: rgba(224, 172, 63, 0.1);
-      color: var(--highlight);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      transition: var(--transition);
-      text-decoration: none;
+      width: 45px; height: 45px; border-radius: 50%;
+      background: rgba(224, 172, 63, 0.1); color: var(--highlight);
+      display: flex; align-items: center; justify-content: center; font-size: 1.2rem; transition: var(--transition); text-decoration: none;
     }
-    
-    .social-icon:hover {
-      background: var(--highlight);
-      color: #1a1a1a;
-      transform: translateY(-5px);
-    }
-    
-    .copyright {
-      margin-top: 40px;
-      padding-top: 30px;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
+    .social-icon:hover { background: var(--highlight); color: #1a1a1a; transform: translateY(-5px); }
+    .copyright { margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); }
     
     /* Floating Buttons */
     .whatsapp-float, .email-float {
-      position: fixed;
-      left: 25px;
-      z-index: 999;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 1.5rem;
-      text-decoration: none;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-      display: flex;
-align-items: center;
-      justify-content: center;
-      transition: var(--transition);
+      position: fixed; left: 25px; z-index: 999; padding: 15px; border-radius: 50%;
+      font-size: 1.5rem; text-decoration: none; box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      display: flex; align-items: center; justify-content: center; transition: var(--transition);
     }
+    .whatsapp-float { bottom: 25px; background-color: #25D366; color: white; width: 60px; height: 60px; }
+    .email-float { bottom: 100px; background-color: var(--highlight); color: black; width: 60px; height: 60px; }
+    .whatsapp-float:hover, .email-float:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
     
-    .whatsapp-float {
-      bottom: 25px;
-      background-color: #25D366;
-      color: white;
-      width: 60px;
-      height: 60px;
-    }
+    /* Animations */
+    .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
     
-    .email-float {
-      bottom: 100px;
-      background-color: var(--highlight);
-      color: black;
-      width: 60px;
-      height: 60px;
-    }
-    
-    .whatsapp-float:hover, .email-float:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    }
-    
-    /* Animation Classes */
-    .animate-on-scroll {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    
-    .animate-on-scroll.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    /* Responsive Design */
+    /* Responsive */
     @media (max-width: 992px) {
-      .hero-content h1 {
-        font-size: 3.5rem;
-      }
-      
-      .section {
-        padding: 80px 20px;
-      }
-      
+      .hero-content h1 { font-size: 3.5rem; }
+      .section { padding: 80px 20px; }
       .nav-links {
-        position: fixed;
-        top: 70px;
-        right: -100%;
-        flex-direction: column;
-        background: rgba(10, 10, 10, 0.95);
-        width: 100%;
-        text-align: center;
-        transition: var(--transition);
-        padding: 20px 0;
+        position: fixed; top: 70px; right: -100%; flex-direction: column; background: rgba(10, 10, 10, 0.95);
+        width: 100%; text-align: center; transition: var(--transition); padding: 20px 0;
       }
-      
-      .nav-links.active {
-        right: 0;
-      }
-      
-      .nav-links li {
-        margin: 15px 0;
-      }
-      
-      .hamburger {
-        display: block;
-      }
-      
-      .btn-outline {
-        margin-left: 0;
-        margin-top: 15px;
-      }
+      .nav-links.active { right: 0; }
+      .nav-links li { margin: 15px 0; }
+      .hamburger { display: block; }
+      .btn-outline { margin-left: 0; margin-top: 15px; }
     }
-    
     @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 2.8rem;
-      }
-      
-      .hero-content p {
-        font-size: 1.2rem;
-      }
-      
-      .section-title h2 {
-        font-size: 2.3rem;
-      }
-      
-      .about-content, .contact-container {
-        flex-direction: column;
-      }
+      .hero-content h1 { font-size: 2.8rem; }
+      .hero-content p { font-size: 1.2rem; }
+      .section-title h2 { font-size: 2.3rem; }
+      .about-content, .contact-container { flex-direction: column; }
     }
-    
     @media (max-width: 576px) {
-      .hero-content h1 {
-        font-size: 2.3rem;
-      }
-      
-      .section {
-        padding: 60px 15px;
-      }
-      
-      .service-box {
-        width: 100%;
-      }
-      
-      .gallery {
-        grid-template-columns: 1fr;
-      }
+      .hero-content h1 { font-size: 2.3rem; }
+      .section { padding: 60px 15px; }
+      .service-box { width: 100%; }
+      .gallery { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -825,12 +281,12 @@ align-items: center;
   <nav class="navbar">
     <a href="#" class="logo">LUXURY AUTO</a>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#clients">Clients</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#home">Startseite</a></li>
+      <li><a href="#about">Über uns</a></li>
+      <li><a href="#services">Dienstleistungen</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="#clients">Kunden</a></li>
+      <li><a href="#contact">Kontakt</a></li>
     </ul>
     <button class="hamburger">
       <i class="fas fa-bars"></i>
@@ -844,11 +300,11 @@ align-items: center;
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Premium Auto Detailing</h1>
-      <p>Exquisite care for your luxury vehicle. Where perfection meets passion.</p>
+      <h1>Premium Autopflege</h1>
+      <p>Exquisite Pflege für Ihr Luxusfahrzeug. Wo Perfektion auf Leidenschaft trifft.</p>
       <div>
-        <a href="#contact" class="btn">Book Appointment</a>
-        <a href="#services" class="btn btn-outline">Our Services</a>
+        <a href="#contact" class="btn">Termin buchen</a>
+        <a href="#services" class="btn btn-outline">Unsere Services</a>
       </div>
     </div>
   </section>
@@ -856,24 +312,24 @@ align-items: center;
   <!-- About Section -->
   <section id="about" class="section">
     <div class="section-title animate-on-scroll">
-      <h2>About Us</h2>
+      <h2>Über uns</h2>
       <div class="divider"></div>
-      <p>Excellence in automotive detailing for the most discerning clients</p>
+      <p>Exzellenz in der Fahrzeugaufbereitung für die anspruchsvollsten Kunden</p>
     </div>
     <div class="about-content">
       <div class="about-text animate-on-scroll">
         <h3>Lamjed Bouhouchi</h3>
-        <p>I am a professional vehicle detailer with over 12 years of experience in the industry. In the past two years, I've specialized in advanced vehicle care, mastering both interior and exterior detailing techniques.</p>
-<p>My expertise includes comprehensive polishing and full-service packages tailored to luxury vehicles. I offer:</p>
+        <p>Ich bin ein professioneller Fahrzeugaufbereiter mit über 12 Jahren Erfahrung in der Branche. In den letzten zwei Jahren habe ich mich auf fortschrittliche Fahrzeugpflege spezialisiert und sowohl Innen- als auch Außen-Detailing-Techniken perfektioniert.</p>
+        <p>Meine Expertise umfasst umfassende Politurarbeiten sowie Komplettservices, maßgeschneidert für Luxusfahrzeuge. Ich biete:</p>
         <ul style="list-style-type: none; margin: 20px 0;">
-          <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--highlight); margin-right: 10px;"></i> Premium Polishing</li>
-          <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--highlight); margin-right: 10px;"></i> Interior & Exterior Deep Cleaning</li>
-          <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--highlight); margin-right: 10px;"></i> Complete Detailing Packages</li>
+          <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--highlight); margin-right: 10px;"></i> Premium-Politur</li>
+          <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--highlight); margin-right: 10px;"></i> Tiefenreinigung innen & außen</li>
+          <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--highlight); margin-right: 10px;"></i> Komplette Detailing-Pakete</li>
         </ul>
-        <p>Throughout my career, I've had the privilege of working with prestigious brands including Mercedes-Benz and Best Carwash, consistently delivering premium results that exceed client expectations.</p>
+        <p>Im Laufe meiner Karriere hatte ich das Privileg, mit renommierten Marken wie Mercedes-Benz und Best Carwash zusammenzuarbeiten und dabei stets Premium-Ergebnisse zu liefern, die die Erwartungen der Kunden übertreffen.</p>
       </div>
       <div class="about-image animate-on-scroll">
-        <img src="photo_2025-04-14_22-52-21.jpg" alt="Professional Detailer">
+        <img src="photo_2025-04-14_22-52-21.jpg" alt="Professioneller Fahrzeugaufbereiter">
       </div>
     </div>
   </section>
@@ -881,36 +337,30 @@ align-items: center;
   <!-- Services Section -->
   <section id="services" class="section" style="background: rgba(15,15,15,0.7);">
     <div class="section-title animate-on-scroll">
-      <h2>Our Services</h2>
+      <h2>Unsere Dienstleistungen</h2>
       <div class="divider"></div>
-      <p>Premium detailing services tailored for luxury vehicles</p>
+      <p>Premium-Detailing-Services, maßgeschneidert für Luxusfahrzeuge</p>
     </div>
     <div class="services">
       <div class="service-box animate-on-scroll">
-        <div class="service-icon">
-          <i class="fas fa-car"></i>
-        </div>
-        <h3>Exterior Detailing</h3>
-        <p>Professional hand wash, clay bar treatment, premium wax application, wheel cleaning, tire dressing, and chrome polishing.</p>
-        <p class="service-price">Starting at €150</p>
+        <div class="service-icon"><i class="fas fa-car"></i></div>
+        <h3>Außenaufbereitung</h3>
+        <p>Professionelle Handwäsche, Clay-Bar-Behandlung, Premium-Wachs, Felgenreinigung, Reifenpflege und Chrompolitur.</p>
+        <p class="service-price">Ab €150</p>
       </div>
       
       <div class="service-box animate-on-scroll">
-        <div class="service-icon">
-          <i class="fas fa-chair"></i>
-        </div>
-        <h3>Interior Detailing</h3>
-        <p>Deep vacuuming, steam cleaning, leather conditioning, dashboard treatment, window cleaning, and odor elimination.</p>
-        <p class="service-price">Starting at €180</p>
+        <div class="service-icon"><i class="fas fa-chair"></i></div>
+        <h3>Innenaufbereitung</h3>
+        <p>Tiefenstaubsaugen, Dampfreinigung, Lederpflege, Cockpitbehandlung, Fensterreinigung und Geruchsentfernung.</p>
+        <p class="service-price">Ab €180</p>
       </div>
       
       <div class="service-box animate-on-scroll">
-        <div class="service-icon">
-          <i class="fas fa-spa"></i>
-        </div>
-        <h3>Complete Package</h3>
-        <p>Full interior and exterior detailing, paint correction, ceramic coating, engine bay cleaning, and headlight restoration.</p>
-        <p class="service-price">Starting at €350</p>
+        <div class="service-icon"><i class="fas fa-spa"></i></div>
+        <h3>Komplettpaket</h3>
+        <p>Innen- & Außenaufbereitung, Lackkorrektur, Keramikbeschichtung, Motorraumreinigung und Scheinwerferaufbereitung.</p>
+        <p class="service-price">Ab €350</p>
       </div>
     </div>
   </section>
@@ -918,9 +368,9 @@ align-items: center;
   <!-- Clients Section -->
   <section id="clients" class="section">
     <div class="section-title animate-on-scroll">
-      <h2>Trusted By Leading Brands</h2>
+      <h2>Vertraut von führenden Marken</h2>
       <div class="divider"></div>
-      <p>We are proud to serve prestigious automotive brands</p>
+      <p>Wir sind stolz darauf, renommierte Automarken zu betreuen</p>
     </div>
     <div class="clients-logos">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" alt="Mercedes-Benz" class="animate-on-scroll">
@@ -931,41 +381,41 @@ align-items: center;
   <!-- Gallery Section -->
   <section id="gallery" class="section">
     <div class="section-title animate-on-scroll">
-      <h2>Our Gallery</h2>
+      <h2>Unsere Galerie</h2>
       <div class="divider"></div>
-      <p>Showcasing our premium detailing work</p>
+      <p>Einblicke in unsere Premium-Detailing-Arbeiten</p>
     </div>
     <div class="gallery-container">
       <div class="gallery">
         <div class="gallery-item animate-on-scroll">
-          <img src="photo_2025-04-14_22-04-18.jpg" alt="Detailing Work">
+          <img src="photo_2025-04-14_22-04-18.jpg" alt="Detailing-Arbeit">
           <div class="gallery-overlay">
-            <h4>Mercedes S-Class</h4>
-            <p>Complete Detailing Package</p>
+            <h4>Mercedes S-Klasse</h4>
+            <p>Komplettes Detailing-Paket</p>
           </div>
         </div>
         
         <div class="gallery-item animate-on-scroll">
-          <img src="photo_2025-04-14_22-04-23.jpg" alt="Detailing Work">
-<div class="gallery-overlay">
-            <h4>BMW 7 Series</h4>
-            <p>Premium Interior Detailing</p>
+          <img src="photo_2025-04-14_22-04-23.jpg" alt="Detailing-Arbeit">
+          <div class="gallery-overlay">
+            <h4>BMW 7er</h4>
+            <p>Premium-Innenaufbereitung</p>
           </div>
         </div>
         
         <div class="gallery-item animate-on-scroll">
-          <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Detailing Work">
+          <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Detailing-Arbeit">
           <div class="gallery-overlay">
             <h4>Audi RS7</h4>
-            <p>Ceramic Coating Application</p>
+            <p>Auftragen der Keramikbeschichtung</p>
           </div>
         </div>
         
         <div class="gallery-item animate-on-scroll">
-          <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Detailing Work">
+          <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Detailing-Arbeit">
           <div class="gallery-overlay">
             <h4>Porsche 911</h4>
-            <p>Paint Correction & Protection</p>
+            <p>Lackkorrektur & Schutz</p>
           </div>
         </div>
       </div>
@@ -975,20 +425,20 @@ align-items: center;
   <!-- Testimonials Section -->
   <section class="testimonials">
     <div class="section-title animate-on-scroll">
-      <h2>Client Testimonials</h2>
+      <h2>Kundenbewertungen</h2>
       <div class="divider"></div>
-      <p>What our valued clients say about our service</p>
+      <p>Das sagen unsere geschätzten Kunden über unseren Service</p>
     </div>
     <div class="testimonial-container">
       <div class="testimonial-box animate-on-scroll">
-        <p class="testimonial-text">Lamjed transformed my Mercedes to showroom condition! The attention to detail is exceptional. The interior looks and smells brand new, and the paint has never looked better. Worth every euro for the premium package.</p>
+        <p class="testimonial-text">Lamjed hat meinen Mercedes in einen Auslieferungszustand versetzt! Die Liebe zum Detail ist außergewöhnlich. Der Innenraum wirkt wie neu und der Lack hat noch nie so gestrahlt. Jeden Euro für das Premium-Paket wert.</p>
         <div class="client-info">
           <div class="client-avatar">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Kunde">
           </div>
           <div class="client-details">
             <h4>Thomas Müller</h4>
-            <p>Mercedes S-Class Owner</p>
+            <p>Besitzer einer Mercedes S-Klasse</p>
           </div>
         </div>
       </div>
@@ -998,27 +448,23 @@ align-items: center;
   <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="section-title animate-on-scroll">
-      <h2>Contact Us</h2>
+      <h2>Kontakt</h2>
       <div class="divider"></div>
-      <p>Schedule your premium detailing service</p>
+      <p>Vereinbaren Sie Ihren Premium-Detailing-Termin</p>
     </div>
     <div class="contact-container">
       <div class="contact-info animate-on-scroll">
-        <h3>Get In Touch</h3>
+        <h3>Kontaktieren Sie uns</h3>
         <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-phone"></i>
-          </div>
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
           <div class="contact-text">
-            <h4>Phone</h4>
+            <h4>Telefon</h4>
             <a href="tel:+491631666435">+49 163 1666435</a>
           </div>
         </div>
         
         <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fab fa-whatsapp"></i>
-          </div>
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
           <div class="contact-text">
             <h4>WhatsApp</h4>
             <a href="https://wa.me/491631666435" target="_blank">+49 163 1666435</a>
@@ -1026,63 +472,59 @@ align-items: center;
         </div>
         
         <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-envelope"></i>
-          </div>
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
           <div class="contact-text">
-            <h4>Email</h4>
+            <h4>E-Mail</h4>
             <a href="mailto:aufbereitung.bouhouchi@gmail.com">aufbereitung.bouhouchi@gmail.com</a>
           </div>
         </div>
         
         <div class="contact-item">
-          <div class="contact-icon">
-            <i class="fas fa-clock"></i>
-          </div>
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
           <div class="contact-text">
-            <h4>Working Hours</h4>
-            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-            <p>Saturday: 10:00 AM - 4:00 PM</p>
-            <p>Sunday: Closed</p>
+            <h4>Öffnungszeiten</h4>
+            <p>Montag – Freitag: 9:00 – 18:00 Uhr</p>
+            <p>Samstag: 10:00 – 16:00 Uhr</p>
+            <p>Sonntag: Geschlossen</p>
           </div>
         </div>
       </div>
       
       <div class="contact-form animate-on-scroll">
-        <h3>Book An Appointment</h3>
+        <h3>Termin vereinbaren</h3>
         <form>
-<div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" class="form-control" placeholder="Your Name">
+          <div class="form-group">
+            <label for="name">Vollständiger Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Ihr Name">
           </div>
           
           <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" class="form-control" placeholder="Your Email">
+            <label for="email">E-Mail-Adresse</label>
+            <input type="email" id="email" class="form-control" placeholder="Ihre E-Mail">
           </div>
           
           <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" class="form-control" placeholder="Your Phone">
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone" class="form-control" placeholder="Ihre Telefonnummer">
           </div>
           
           <div class="form-group">
-            <label for="service">Service Interested In</label>
+            <label for="service">Gewünschte Dienstleistung</label>
             <select id="service" class="form-control">
-              <option value="">Select a Service</option>
-              <option value="exterior">Exterior Detailing</option>
-              <option value="interior">Interior Detailing</option>
-              <option value="complete">Complete Package</option>
-              <option value="other">Other Service</option>
+              <option value="">Service auswählen</option>
+              <option value="exterior">Außenaufbereitung</option>
+              <option value="interior">Innenaufbereitung</option>
+              <option value="complete">Komplettpaket</option>
+              <option value="other">Andere Dienstleistung</option>
             </select>
           </div>
           
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" class="form-control" placeholder="Your Message"></textarea>
+            <label for="message">Nachricht</label>
+            <textarea id="message" class="form-control" placeholder="Ihre Nachricht"></textarea>
           </div>
           
-          <button type="submit" class="btn">Request Appointment</button>
+          <button type="submit" class="btn">Termin anfragen</button>
         </form>
       </div>
     </div>
@@ -1093,7 +535,7 @@ align-items: center;
     <div class="footer-content">
       <div class="footer-col">
         <h4>LUXURY AUTO</h4>
-        <p>Premium automotive detailing services with over 12 years of experience. Specializing in luxury vehicle care and restoration.</p>
+        <p>Premium Fahrzeugaufbereitung mit über 12 Jahren Erfahrung. Spezialisiert auf Pflege und Aufbereitung von Luxusfahrzeugen.</p>
         <div class="social-links">
           <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
           <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
@@ -1102,39 +544,38 @@ align-items: center;
       </div>
       
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4>Schnellzugriff</h4>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Startseite</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#services">Dienstleistungen</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#contact">Kontakt</a></li>
         </ul>
       </div>
       
       <div class="footer-col">
-        <h4>Our Services</h4>
+        <h4>Unsere Services</h4>
         <ul>
-          <li><a href="#">Exterior Detailing</a></li>
-          <li><a href="#">Interior Detailing</a></li>
-          <li><a href="#">Complete Packages</a></li>
-          <li><a href="#">Ceramic Coating</a></li>
-          <li><a href="#">Paint Correction</a></li>
+          <li><a href="#">Außenaufbereitung</a></li>
+          <li><a href="#">Innenaufbereitung</a></li>
+          <li><a href="#">Komplettpakete</a></li>
+          <li><a href="#">Keramikbeschichtung</a></li>
+          <li><a href="#">Lackkorrektur</a></li>
         </ul>
       </div>
     </div>
     
     <div class="copyright">
-      <p>© 2025 Luxury Auto Detailing. All rights reserved.</p>
+      <p>© 2025 Luxus Autopflege. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
   
   <!-- Floating Contact Buttons -->
-  <a href="https://wa.me/491631666435" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/491631666435" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
-  
-  <a href="mailto:aufbereitung.bouhouchi@gmail.com" class="email-float">
+  <a href="mailto:aufbereitung.bouhouchi@gmail.com" class="email-float" aria-label="E-Mail">
     <i class="fas fa-envelope"></i>
   </a>
   
@@ -1142,86 +583,55 @@ align-items: center;
     // Navigation toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-    
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('active');
       hamburger.innerHTML = navLinks.classList.contains('active') ? 
         '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
     });
-    
     // Close mobile menu when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
         hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-});
+      });
     });
-    
     // Sticky navbar
     const navbar = document.querySelector('.navbar');
-    
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
+      if (window.scrollY > 100) { navbar.classList.add('scrolled'); }
+      else { navbar.classList.remove('scrolled'); }
     });
-    
     // Animation on scroll
     const animateElements = document.querySelectorAll('.animate-on-scroll');
-    
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-    
-    animateElements.forEach(element => {
-      observer.observe(element);
-    });
-    
-    // Smooth scrolling for anchor links
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    animateElements.forEach(element => { observer.observe(element); });
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 80,
-            behavior: 'smooth'
-          });
+          window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' });
         }
       });
     });
-    
-    // Form submission
+    // Form submission (DE messages)
     const contactForm = document.querySelector('.contact-form form');
-    
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      
-      // Form validation
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-      const service = document.getElementById('service').value;
-      
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value.trim();
       if (!name || !email || !phone || !service) {
-        alert('Please fill in all required fields.');
+        alert('Bitte füllen Sie alle erforderlichen Felder aus.');
         return;
       }
-      
-      // In a real implementation, you would send the form data to a server
-      alert('Thank you for your appointment request! We will contact you shortly to confirm your booking.');
+      alert('Vielen Dank für Ihre Terminanfrage! Wir kontaktieren Sie in Kürze zur Bestätigung.');
       this.reset();
     });
   </script>
